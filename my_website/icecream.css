@@ -1,0 +1,29 @@
+body{
+    font-family:Georgia;
+    color: #fff;
+}
+h1{
+    font-size:1.3em;
+    text-align: center;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-collapse: collapse;
+    cellspacing: 0px;
+}
+tr{
+    border: 1px Solid #ffffff;
+    text-align: center;
+    background-color: #A9A9A9;
+}
+th{
+    text-align: center;
+    color: #fff;
+    background-color: #000000;
+}
+img{
+    text-align: center;
+    display: block;
+}
