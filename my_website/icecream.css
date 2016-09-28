@@ -1,6 +1,7 @@
 body{
     font-family:Georgia;
-    color: #fff;
+    color: #B6B6B4;
+    background-color: #0C090A;
 }
 h1{
     font-size:1.3em;
@@ -16,12 +17,12 @@ table{
 tr{
     border: 1px Solid #ffffff;
     text-align: center;
-    background-color: #A9A9A9;
+    background-color: #0C090A;
 }
 th{
     text-align: center;
     color: #fff;
-    background-color: #000000;
+    background-color: #0C090A;
 }
 img{
     text-align: center;
