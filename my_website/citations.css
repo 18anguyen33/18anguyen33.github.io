@@ -25,3 +25,6 @@ a{
 ol{
     color:#B6B6B4;
 }
+.verticalLine {
+    border-left: thick solid #ff0000;
+}
