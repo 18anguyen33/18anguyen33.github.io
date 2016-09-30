@@ -28,3 +28,7 @@ ol{
 .verticalLine {
     border-left: thick solid #ff0000;
 }
+hr{
+    display:inline-block
+}
+}
