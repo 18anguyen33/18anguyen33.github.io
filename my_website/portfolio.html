@@ -17,9 +17,48 @@ a:visited {color:#1E90FF; background-color:transparent; text-decoration:none}
 a:hover   {color:#1E90FF; background-color:transparent; text-decoration:underline}
 a:active  {color:#1E90FF; background-color:transparent; text-decoration:underline}
 </style>
+
     <div><h1>This is my Portfolio Page!</h1></div>
+    <script type="text/javascript">
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var seconds = currentTime.getSeconds();
+            var suffix = "AM"; 
+            if (seconds<10){
+                seconds = "0" + seconds;
+            }
+            if(minutes<10){
+                minutes = "0" + minutes;
+            }
+    
+            if (hours>= 12){
+                suffix = "PM";
+                hours = hours -12;
+                
+            }
+            if (hours===0){
+                hours=12;
+            }
+            document.write("<div>" + "<p>" + hours + ":" + minutes + ":" + seconds + "" + suffix + "</p>" + "</div>");
+            function updateClock() {
+  document.getElementById('time').innerHTML = [date, time].join(' / ')
+}
+setInterval(updateClock, 1000);
+        </script>
     <div><img src="images/projects.jpg" height="175"></div>
-    <div><p>Not much is here right now, but this will be the place where I will either link my projects or directly show them.(I am not quite sure yet)</p></div>
+    <div>
+        <a href = "https://scratch.mit.edu/projects/127657018/">
+            <img src="images/wizard.PNG">
+        </a>
+        <a href = "https://scratch.mit.edu/projects/128234962/">
+            <img src="images/platformer.PNG">
+        </a>
+        <p>When i started this game, I wanted to create a game that was easyish, but hard enough to keep the player playing for a while. As such, I thought of Super Meat and I continued the Platformer idea from there. The two hardest parts to create was the jump and fall machanic and the Hit detection machanic.
+        For the jump part, I used variables x any y to make the ball fall in a parabola like shape. Also, the new variables allowed more room to change the spript of needed. The hit dection was easier, but still difficult. I just made it that if the ball touched the purple areas, it would not continue falling and stand on it like a platform.
+        The wall jump was a side effect of the script and made for better level designs. If the ball touched the green, if would reset to the beginning position and add a death to the counter. The main difficulties I met was the jump glitch and the level warp glitch. The jump glitch made it so that it would speed up upwards and stick to the ceiling until I jumped again.
+        While this was cool, it was not the wated effect so I added the fall part of the script. Now the level warp was that the ball sprite was off centered and it continually moved to the next level because it touched the edge. In the end, I just centered the sprite again, and it worked like normal.</p>
+    </div>
     <div><img src="images/ideas.png" height="175"></div>
     
      <div><a href="index.html">Home</a>
